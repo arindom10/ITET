@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { CiLocationOn } from "react-icons/ci";
+import { IoCallOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -45,10 +47,18 @@ export default function Footer() {
               We are passionate education dedicated to providing high-quality
               resources learners all backgrounds.
             </p>
-            <p className="text-gray-400 mb-1">
-              📍 BSCIC Industrial Estate, Konabari, Gazipur, Bangladesh
-            </p>
-            <p className="text-gray-400">📞 +880 1752-542222</p>
+            <div className="flex items-center gap-1">
+              <CiLocationOn className="text-xl" />
+              <p className="text-gray-400 mb-1 hover:text-[#B07210]">
+                BSCIC Industrial Estate, Konabari, <br /> Gazipur, Bangladesh
+              </p>
+            </div>
+            <div className="flex gap-1">
+              <IoCallOutline />
+              <p className="text-gray-400 hover:text-[#B07210]">
+                +880 1752-542222
+              </p>
+            </div>
           </div>
 
           {/* Our Campus */}
@@ -57,11 +67,11 @@ export default function Footer() {
               Our Campus
             </h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Academic</li>
-              <li>Athletics</li>
-              <li>Campus life</li>
-              <li>Research</li>
-              <li>Academic Area</li>
+              <li className="hover:text-red-500">Academic</li>
+              <li className="hover:text-red-500">Athletics</li>
+              <li className="hover:text-red-500">Campus life</li>
+              <li className="hover:text-red-500">Research</li>
+              <li className="hover:text-red-500">Academic Area</li>
             </ul>
           </div>
 
@@ -70,12 +80,12 @@ export default function Footer() {
             <h4 className="font-semibold text-base mb-3 underline">
               Our Pages
             </h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>About</li>
-              <li>Tution Fee</li>
-              <li>Alumni</li>
-              <li>Faculty Staff</li>
-              <li>Event</li>
+            <ul className="space-y-2 text-gray-400 ">
+              <li className="hover:text-red-500">About</li>
+              <li className="hover:text-red-500">Tution Fee</li>
+              <li className="hover:text-red-500">Alumni</li>
+              <li className="hover:text-red-500">Faculty Staff</li>
+              <li className="hover:text-red-500">Event</li>
             </ul>
           </div>
 
@@ -93,7 +103,9 @@ export default function Footer() {
                 />
                 <div>
                   <p className="text-xs">📅 August 6, 2024</p>
-                  <p>Those Inequalities Are Inequalities That</p>
+                  <p className="hover:text-[#B07210]">
+                    Those Inequalities Are Inequalities That
+                  </p>
                 </div>
               </div>
               <div className="flex space-x-3">
@@ -106,7 +118,9 @@ export default function Footer() {
                 />
                 <div>
                   <p className="text-xs">📅 July 4, 2024</p>
-                  <p>After Decades Of Improvement, Cardiovascular</p>
+                  <p className="hover:text-[#B07210]">
+                    After Decades Of Improvement, Cardiovascular
+                  </p>
                 </div>
               </div>
             </div>
@@ -116,7 +130,9 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 pt-6 text-center text-gray-500 text-xs">
           Copyright @ 2025. All Rights Reserved by{" "}
-          <span className="text-white font-semibold">360D Soul Limited.</span>
+          <span className="text-white font-semibold hover:text-[#B07210]">
+            360D Soul Limited.
+          </span>
         </div>
       </div>
     </footer>

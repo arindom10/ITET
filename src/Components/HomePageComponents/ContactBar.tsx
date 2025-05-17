@@ -1,13 +1,13 @@
 import Link from "next/link";
+import { CiLocationOn } from "react-icons/ci";
 import {
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaPhone,
   FaFacebookF,
   FaYoutube,
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { IoCallOutline } from "react-icons/io5";
 
 export default function ContactBar() {
   return (
@@ -16,7 +16,7 @@ export default function ContactBar() {
         {/* Left Section */}
         <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-center gap-4 sm:gap-6">
           <div className="flex items-center gap-2 max-w-xs">
-            <FaMapMarkerAlt className="mt-1 text-xl shrink-0" />
+            <CiLocationOn className="mt-1 text-xl shrink-0" />
             <span>
               BSCIC Industrial Estate, Konabari,
               <br />
@@ -25,11 +25,11 @@ export default function ContactBar() {
           </div>
 
           <div className="flex items-center gap-2">
-            <FaEnvelope />
+            <HiOutlineMail />
             <span>info@itet.com</span>
           </div>
           <div className="flex items-center gap-2">
-            <FaPhone />
+            <IoCallOutline />
             <span>+880 1752-542222</span>
           </div>
         </div>
