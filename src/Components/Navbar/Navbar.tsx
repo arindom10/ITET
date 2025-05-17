@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import ContactBar from "../HomePageComponents/ContactBar";
@@ -14,11 +15,11 @@ export default function Navbar() {
   const handleClick = (item: string) => setActiveItem(item);
 
   const menuItems = [
-    "Home",
-    "About ITET",
-    "Membership",
-    "Jobs & Internships",
-    "More Pages",
+    { label: "Home", path: "/" },
+    { label: "About ITET", path: "/AboutITET" },
+    { label: "Membership", path: "/membership" },
+    { label: "Jobs & Internships", path: "/jobs" },
+    { label: "More Pages", path: "/more" },
   ];
 
   const dropdownLinks = [
@@ -56,21 +57,21 @@ export default function Navbar() {
 
           {/* Links */}
           <ul className="flex items-center gap-6 text-sm font-medium">
-            {menuItems.map((item) => (
+            {menuItems.map(({ label, path }) => (
               <li
-                key={item}
-                className={`cursor-pointer ${
-                  activeItem === item ? "text-yellow-700 font-semibold" : ""
+                key={label}
+                className={`relative cursor-pointer ${
+                  activeItem === label ? "text-yellow-700 font-semibold" : ""
                 }`}
-                onMouseEnter={() => handleMouseEnter(item)}
-                onClick={() => handleClick(item)}
+                onMouseEnter={() => handleMouseEnter(label)}
+                onClick={() => handleClick(label)}
               >
-                <div className="flex items-center gap-1">
-                  {item}
-                  {item !== "Home" && (
+                <Link href={path} className="flex items-center gap-1">
+                  {label}
+                  {label !== "Home" && (
                     <FaChevronDown className="text-xs mt-[1px]" />
                   )}
-                </div>
+                </Link>
               </li>
             ))}
 
@@ -103,7 +104,7 @@ export default function Navbar() {
 
       {/* Global Dropdown */}
       {openDropdown && openDropdown !== "Home" && (
-        <div className="absolute top-[100%] left-1/2 transform -translate-x-1/2  bg-white shadow-lg p-6 w-[700px] flex z-40 rounded">
+        <div className="absolute top-[100%] left-1/2 transform -translate-x-1/2 bg-white shadow-lg p-6 w-[700px] flex z-40 rounded">
           {/* Left column */}
           <div className="w-1/2 space-y-4">
             <h3 className="text-lg font-semibold text-yellow-700">
