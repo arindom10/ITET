@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -68,7 +67,9 @@ export default function BannerSection() {
                 Stay Connected. <br /> Grow Together.
               </h2>
               <p className="text-sm text-gray-600 mb-4">
-                Join the Textile Alumni Network & access exclusive benefits.
+                Join the Textile Alumnl Network & access exclusive benefits.
+                Join the Textile Alumnl Network & access exclusive benefits.Join
+                the Textile Alumnl Network & access exclusive benefits.
               </p>
               <div className="flex gap-3 mb-6">
                 <button className="bg-[#C2855A] text-white px-4 py-2 rounded text-sm hover:bg-[#a96928]">
@@ -80,7 +81,7 @@ export default function BannerSection() {
               </div>
 
               {/* Partner Slider - moved below */}
-              <div className="mt-6">
+              <div className="mt-6 bg-white ">
                 <div className="mb-3 flex items-center justify-between">
                   <h3 className="text-sm font-semibold text-[#444]">
                     Our Premium <span className="text-[#C2855A]">Partners</span>
@@ -155,7 +156,7 @@ export default function BannerSection() {
             <img
               src="https://i.ibb.co/RTTXSqTJ/3b2430433b1f139147863fc5549cc411a1cf06da.png"
               alt="bottom-banner"
-              className="w-full object-cover rounded"
+              className="w-full h-3/5 object-cover rounded"
             />
           </div>
         </div>
@@ -168,7 +169,7 @@ export default function BannerSection() {
                 key={index}
                 src={img}
                 alt={`slide-${index}`}
-                className={`w-full h-full object-cover rounded transition-opacity duration-700 absolute top-0 left-0 ${
+                className={`w-full h-10/12 object-cover rounded transition-opacity duration-700 absolute top-0 left-0 ${
                   currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0"
                 }`}
               />
