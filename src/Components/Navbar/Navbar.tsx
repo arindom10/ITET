@@ -1,7 +1,13 @@
 import React from "react";
+import ContactBar from "../HomePageComponents/ContactBar";
 
 const Navbar = () => {
-  return <div>This is Navbar!!!</div>;
+  return (
+    <div>
+      <ContactBar />
+      <h1>This is Navbar!!!</h1>
+    </div>
+  );
 };
 
 export default Navbar;
