@@ -15,9 +15,9 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Enter Your mail"
-              className="flex-1 py-2 px-4 rounded-l-md bg-gray-900 text-white outline-none border border-gray-700"
+              className="flex-1 py-2 px-4 md bg-gray-900 text-white outline-none border border-[#B07210]"
             />
-            <button className="bg-white text-black px-4 py-2 rounded-r-md font-medium hover:bg-gray-200">
+            <button className="bg-white text-black px-4 py-2  font-medium hover:bg-[#B07210]">
               Submit Button ↗
             </button>
           </div>
@@ -44,8 +44,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 mb-3">
-              We are passionate education dedicated to providing high-quality
-              resources learners all backgrounds.
+              We are passionate education dedicated <br /> to providing
+              high-quality resources <br /> learners all backgrounds.
             </p>
             <div className="flex items-center gap-1">
               <CiLocationOn className="text-xl" />

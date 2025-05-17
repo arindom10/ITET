@@ -139,7 +139,7 @@ export default function Navbar() {
                 Explore the many resources available to Dartmouth small business
                 owners.
               </p>
-              <button className="mt-2 bg-yellow-700 text-white px-4 py-1 text-sm rounded hover:bg-yellow-800">
+              <button className="mt-2 bg-yellow-800 text-white px-4 py-1 text-sm rounded hover:bg-yellow-500">
                 Explore All →
               </button>
             </div>
