@@ -62,7 +62,7 @@ export default function OurResponsibility() {
             key={item.id}
             className={`relative w-full sm:w-64 p-6 rounded-xl shadow-md ${item.bg} z-10 flex flex-col justify-between`}
             style={{
-              marginTop: item.position === "top" ? "0" : "100px",
+              marginTop: item.position === "top" ? "0" : "125px",
             }}
           >
             {/* Number Position */}
@@ -101,21 +101,21 @@ export default function OurResponsibility() {
         {/* From 1 to 2 */}
         <img
           src="https://i.ibb.co/qYj1nJw1/how-work-box-arrow-1-svg-fill-1.png"
-          className="absolute left-[20%] top-[430px] hidden md:block"
+          className="absolute left-[29%] top-[430px] hidden md:block"
           alt="arrow 1"
         />
 
         {/* From 2 to 3 */}
         <img
           src="https://i.ibb.co/2fGrgg6/how-work-box-arrow-2-svg-fill.png"
-          className="absolute left-[40%] top-[150px] hidden md:block"
+          className="absolute left-[43%] top-[175px] hidden md:block"
           alt="arrow 2"
         />
 
         {/* From 3 to 4 */}
         <img
           src="https://i.ibb.co/Kj7752Jh/how-work-box-arrow-1-svg-fill.png"
-          className="absolute left-[64%] top-[430px] hidden md:block"
+          className="absolute left-[60%] top-[430px] hidden md:block"
           alt="arrow 3"
         />
       </div>
