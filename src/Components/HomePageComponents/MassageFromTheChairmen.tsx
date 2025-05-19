@@ -4,14 +4,14 @@ export default function ChairmanSection() {
   const chairmanData = [
     {
       image:
-        "https://i.ibb.co/21X3nRxs/df808745d4eeae509bbfb902288411fb819999c2.jpg",
+        "https://i.ibb.co/4g22b21k/1af2086220affecd5f498aeca93f64918a91bf86.jpg",
       signature:
         "https://i.ibb.co/v6CH0RzH/145069a46d6738ab0c1e4eebd52838504c872aee-1.png",
       name: "Prof. Dr. XYZ Rahman",
     },
     {
       image:
-        "https://i.ibb.co/4g22b21k/1af2086220affecd5f498aeca93f64918a91bf86.jpg",
+        "https://i.ibb.co/21X3nRxs/df808745d4eeae509bbfb902288411fb819999c2.jpg",
       signature:
         "https://i.ibb.co/v6CH0RzH/145069a46d6738ab0c1e4eebd52838504c872aee-1.png",
       name: "Prof. Dr. XYZ Rahman",
@@ -66,7 +66,7 @@ export default function ChairmanSection() {
                 Lorem Ipsum has been the industry’s standard dummy text ever
                 since the 1500s...
               </p>
-              <button className="mt-4 bg-[#1A4ED3] text-white text-sm px-5 py-2 rounded hover:bg-blue-700 transition">
+              <button className="mt-4 w-[160px] bg-[#1A4ED3] text-white text-sm px-5 py-2 rounded hover:bg-yellow-500 transition">
                 Read More →
               </button>
             </div>

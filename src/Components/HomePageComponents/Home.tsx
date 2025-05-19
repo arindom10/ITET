@@ -3,6 +3,7 @@ import BannerSection from "./BannerSection";
 import TextileIndustryMarketUpdates from "./TextileIndustryMarketUpdates";
 import OurResponsibility from "./OurResposibility";
 import MassageFromTheChairmen from "./MassageFromTheChairmen";
+import AlumniSection from "./AlumniData";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <TextileIndustryMarketUpdates />
       <OurResponsibility />
       <MassageFromTheChairmen />
+      <AlumniSection />
     </div>
   );
 };

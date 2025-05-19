@@ -81,7 +81,7 @@ export default function BannerSection() {
               </div>
 
               {/* Partner Slider - moved below */}
-              <div className="mt-6 bg-white ">
+              <div className="mt-6  ">
                 <div className="mb-3 flex items-center justify-between">
                   <h3 className="text-sm font-semibold text-[#444]">
                     Our Premium <span className="text-[#C2855A]">Partners</span>
