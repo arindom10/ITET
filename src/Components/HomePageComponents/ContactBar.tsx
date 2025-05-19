@@ -11,8 +11,8 @@ import { IoCallOutline } from "react-icons/io5";
 
 export default function ContactBar() {
   return (
-    <div className="bg-[#26A9C4] text-white text-sm">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 py-2 px-4">
+    <div className="bg-[#26A9C4] text-white text-sm hidden lg:block">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 py-2 px-4 ">
         {/* Left Section */}
         <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-center gap-4 sm:gap-6">
           <div className="flex items-center gap-2 max-w-xs">
