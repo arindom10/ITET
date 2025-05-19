@@ -72,10 +72,10 @@ export default function BannerSection() {
                 the Textile Alumnl Network & access exclusive benefits.
               </p>
               <div className="flex gap-3 mb-6">
-                <button className="bg-[#C2855A] text-white px-4 py-2 rounded text-sm hover:bg-[#a96928]">
+                <button className="bg-[#C2855A] text-white px-4 py-2 rounded text-sm hover:bg-yellow-500">
                   Become A Member
                 </button>
-                <button className="border border-[#C2855A] text-[#C2855A] px-4 py-2 rounded text-sm hover:bg-[#C2855A] hover:text-white">
+                <button className="border border-[#C2855A] text-[#C2855A] px-4 py-2 rounded text-sm hover:bg-yellow-500 hover:text-white">
                   Become Ads Partner
                 </button>
               </div>
