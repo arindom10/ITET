@@ -3,16 +3,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import ContactBar from "../HomePageComponents/ContactBar";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [activeItem, setActiveItem] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleMouseEnter = (item: string) => setOpenDropdown(item);
   const handleMouseLeave = () => setOpenDropdown(null);
   const handleClick = (item: string) => setActiveItem(item);
+
+  // For mobile dropdown toggling
+  const toggleDropdown = (item: string) => {
+    if (openDropdown === item) setOpenDropdown(null);
+    else setOpenDropdown(item);
+  };
 
   const menuItems = [
     { label: "Home", path: "/" },
@@ -55,8 +62,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Links */}
-          <ul className="flex items-center gap-6 text-sm font-medium">
+          {/* Desktop Menu */}
+          <ul className="hidden sm:flex items-center gap-6 text-sm font-medium">
             {menuItems.map(({ label, path }) => (
               <li
                 key={label}
@@ -99,11 +106,104 @@ export default function Navbar() {
               </svg>
             </li>
           </ul>
+
+          {/* Mobile menu button */}
+          <button
+            className="sm:hidden text-gray-700 focus:outline-none"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="sm:hidden bg-white border-t shadow-md">
+            <ul className="flex flex-col gap-2 px-4 py-3">
+              {menuItems.map(({ label, path }) => (
+                <li key={label} className="border-b last:border-none">
+                  {label === "Home" ? (
+                    <Link
+                      href={path}
+                      className={`block py-2 ${
+                        activeItem === label
+                          ? "text-yellow-700 font-semibold"
+                          : "text-gray-700"
+                      }`}
+                      onClick={() => {
+                        setActiveItem(label);
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {label}
+                    </Link>
+                  ) : (
+                    <>
+                      <button
+                        className={`w-full flex justify-between items-center py-2 text-left ${
+                          activeItem === label
+                            ? "text-yellow-700 font-semibold"
+                            : "text-gray-700"
+                        }`}
+                        onClick={() => {
+                          toggleDropdown(label);
+                          setActiveItem(label);
+                        }}
+                      >
+                        <span>{label}</span>
+                        <FaChevronDown
+                          className={`transition-transform ${
+                            openDropdown === label ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {/* Dropdown links */}
+                      {openDropdown === label && (
+                        <ul className="pl-4 pb-2 text-sm text-gray-600 space-y-1">
+                          {dropdownLinks.map((link, idx) => (
+                            <li
+                              key={idx}
+                              className="cursor-pointer hover:text-yellow-600"
+                            >
+                              {link}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  )}
+                </li>
+              ))}
+
+              <li>
+                <button className="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm mt-2">
+                  Query & Answer
+                </button>
+              </li>
+
+              <li className="flex justify-end py-2">
+                <svg
+                  className="w-5 h-5 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
 
-      {/* Global Dropdown */}
-      {openDropdown && openDropdown !== "Home" && (
+      {/* Desktop Global Dropdown */}
+      {openDropdown && openDropdown !== "Home" && !mobileMenuOpen && (
         <div className="absolute top-[100%] left-1/2 transform -translate-x-1/2 bg-white shadow-lg p-6 w-[700px] flex z-40 rounded">
           {/* Left column */}
           <div className="w-1/2 space-y-4">

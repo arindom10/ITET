@@ -56,11 +56,11 @@ export default function OurResponsibility() {
         OUR RESPONSIBILITY
       </h2>
 
-      <div className="flex justify-center items-start gap-10 max-w-7xl mx-auto relative z-10">
+      <div className="flex flex-wrap justify-center items-start gap-10 max-w-7xl mx-auto relative z-10 px-4 md:px-0">
         {items.map((item) => (
           <div
             key={item.id}
-            className={`relative w-64 p-6 rounded-xl shadow-md ${item.bg} z-10 flex flex-col justify-between`}
+            className={`relative w-full sm:w-64 p-6 rounded-xl shadow-md ${item.bg} z-10 flex flex-col justify-between`}
             style={{
               marginTop: item.position === "top" ? "0" : "100px",
             }}
