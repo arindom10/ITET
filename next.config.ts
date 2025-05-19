@@ -1,8 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.js
+module.exports = {
   images: {
-    domains: ["i.ibb.co"], // ✅ allow this image domain
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**', // Allow all hostnames
+        pathname: '/**',
+      },
+    ],
   },
-};
-
-module.exports = nextConfig;
+}
