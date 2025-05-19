@@ -10,7 +10,7 @@ const alumniList = [
     message:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
     image:
-      "https://i.ibb.co/dsY1DdHC/2ea83c343c53fe98abd1fd0f31e833e3fd3f2a22.jpg",
+      "https://i.ibb.co/NkLSx6y/5012b13ecaa65890e6dc5c6959bcecc9b4a28ad2.jpg",
   },
   {
     name: "Mahbub J. Showvik",
@@ -18,7 +18,7 @@ const alumniList = [
     message:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
     image:
-      "https://i.ibb.co/Q7nk6knR/851776b420146d51b235213736c6cb817ecb6519.png",
+      "https://i.ibb.co/Q7cwkZ6D/3591568da9fa93d110ad61e1acb108f7d6c2dae0.png",
   },
   {
     name: "Hasibur Rahman",
@@ -26,7 +26,7 @@ const alumniList = [
     message:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
     image:
-      "https://i.ibb.co/Q7cwkZ6D/3591568da9fa93d110ad61e1acb108f7d6c2dae0.png",
+      "https://i.ibb.co/Q7nk6knR/851776b420146d51b235213736c6cb817ecb6519.png",
   },
   {
     name: "Tashnim Anin",
@@ -34,7 +34,7 @@ const alumniList = [
     message:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.",
     image:
-      "https://i.ibb.co/NkLSx6y/5012b13ecaa65890e6dc5c6959bcecc9b4a28ad2.jpg",
+      "https://i.ibb.co/dsY1DdHC/2ea83c343c53fe98abd1fd0f31e833e3fd3f2a22.jpg",
   },
 ];
 
