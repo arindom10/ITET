@@ -62,8 +62,8 @@ const page = () => {
             -১৯৮৩ সাল থেকে
           </h1>
           <p className="mt-8 justify-self-end text-[#666666]">
-            ১৫ আগস্ট ১৯৮৩ সালে "দ্য ইনস্টিটিউশন অব টেক্সটাইল ইঞ্জিনিয়ার্স এন্ড
-            টেকনোলজিস্টস, বাংলাদেশ" প্রতিষ্ঠার সিদ্ধান্ত গৃহীত হয় এবং ১৭ আগস্ট
+            ১৫ আগস্ট ১৯৮৩ সালে দ্য ইনস্টিটিউশন অব টেক্সটাইল ইঞ্জিনিয়ার্স এন্ড
+            টেকনোলজিস্টস, বাংলাদেশ প্রতিষ্ঠার সিদ্ধান্ত গৃহীত হয় এবং ১৭ আগস্ট
             ১৯৮৪ <br />
             সালে গঠনতন্ত্র চূড়ান্ত করে সংগঠনটি আনুষ্ঠানিকভাবে নিবন্ধিত হয়। ওই
             তারিখ থেকে গঠনতন্ত্র কার্যকর হয়।
@@ -94,16 +94,18 @@ const page = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
           <div className="relative ">
             <img
-            className="absolute "
-            src="https://i.postimg.cc/zG2tDBXV/Frame-1261155742.png"
-            alt=""
-          />
-          <div className="absolute top-10 left-0 right-0 bottom-0 flex items-center justify-center">
-            <div className="bg-white/10 backdrop-blur items-center justify-center flex flex-col p-6 ">
-              <GoArrowUpRight className="text-4xl"/>
-              <h1 className="text-xl font-bold text-center px-4 p-2">Explore <br /> More</h1>
+              className="absolute "
+              src="https://i.postimg.cc/zG2tDBXV/Frame-1261155742.png"
+              alt=""
+            />
+            <div className="absolute top-10 left-0 right-0 bottom-0 flex items-center justify-center">
+              <div className="bg-white/10 backdrop-blur items-center justify-center flex flex-col p-6 ">
+                <GoArrowUpRight className="text-4xl" />
+                <h1 className="text-xl font-bold text-center px-4 p-2">
+                  Explore <br /> More
+                </h1>
+              </div>
             </div>
-          </div>
           </div>
           <img
             src="https://i.postimg.cc/zG2tDBXV/Frame-1261155742.png"
