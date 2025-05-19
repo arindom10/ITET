@@ -62,7 +62,7 @@ export default function OurResponsibility() {
             key={item.id}
             className={`relative w-64 p-6 rounded-xl shadow-md ${item.bg} z-10 flex flex-col justify-between`}
             style={{
-              marginTop: item.position === "top" ? "0" : "60px",
+              marginTop: item.position === "top" ? "0" : "100px",
             }}
           >
             {/* Number Position */}
@@ -99,58 +99,25 @@ export default function OurResponsibility() {
       {/* Dotted Arrows */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         {/* From 1 to 2 */}
-        <svg
-          className="absolute left-[20%] top-[500px] hidden md:block"
-          width="100"
-          height="50"
-          viewBox="0 0 100 50"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0 C25 50, 75 50, 100 0"
-            stroke="#F59E0B"
-            strokeWidth="2"
-            strokeDasharray="4"
-            fill="none"
-          />
-        </svg>
+        <img
+          src="https://i.ibb.co/qYj1nJw1/how-work-box-arrow-1-svg-fill-1.png"
+          className="absolute left-[20%] top-[430px] hidden md:block"
+          alt="arrow 1"
+        />
 
         {/* From 2 to 3 */}
-        <svg
-          className="absolute left-[44.5%] top-[120px] hidden md:block"
-          width="100"
-          height="50"
-          viewBox="0 0 100 50"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 50 C25 0, 75 0, 100 50"
-            stroke="#3B82F6"
-            strokeWidth="2"
-            strokeDasharray="4"
-            fill="none"
-          />
-        </svg>
+        <img
+          src="https://i.ibb.co/2fGrgg6/how-work-box-arrow-2-svg-fill.png"
+          className="absolute left-[40%] top-[150px] hidden md:block"
+          alt="arrow 2"
+        />
 
         {/* From 3 to 4 */}
-        <svg
-          className="absolute left-[66%] top-[500px] hidden md:block"
-          width="100"
-          height="50"
-          viewBox="0 0 100 50"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0 0 C25 50, 75 50, 100 0"
-            stroke="#EC4899"
-            strokeWidth="2"
-            strokeDasharray="4"
-            fill="none"
-          />
-        </svg>
+        <img
+          src="https://i.ibb.co/Kj7752Jh/how-work-box-arrow-1-svg-fill.png"
+          className="absolute left-[64%] top-[430px] hidden md:block"
+          alt="arrow 3"
+        />
       </div>
     </section>
   );
