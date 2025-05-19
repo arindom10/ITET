@@ -25,31 +25,31 @@ export default function ChairmanSection() {
       </h2>
 
       {/* Chairman Cards Row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {chairmanData.map((chairman, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center bg-[#F8F8F8] rounded-xl shadow p-6 gap-6"
+            className="flex bg-[#F8F8F8] rounded-xl shadow-md p-4 gap-4 items-center"
           >
             {/* Left Image */}
-            <div className="w-full md:w-1/3 flex justify-center">
+            <div className="flex-shrink-0 ">
               <Image
                 src={chairman.image}
                 alt="Chairman"
                 width={200}
-                height={200}
-                className="rounded-[30px] object-cover"
+                height={250}
+                className="object-cover h-[350px] rounded-tr-[100px] rounded-bl-[100px]"
               />
             </div>
 
             {/* Right Content */}
-            <div className="w-full md:w-2/3 text-center md:text-left">
+            <div className="flex flex-col justify-center">
               <Image
                 src={chairman.signature}
                 alt="Signature"
                 width={120}
                 height={60}
-                className="mx-auto md:mx-0 mb-2"
+                className="mb-2"
               />
               <p className="text-sm text-gray-500">Honorable</p>
               <h3 className="text-lg font-semibold text-gray-800">
@@ -61,10 +61,10 @@ export default function ChairmanSection() {
               <p className="text-sm text-gray-600 mt-1">
                 Ensuring Quality Textile Education
               </p>
-              <p className="text-sm text-gray-700 mt-3 leading-relaxed">
+              <p className="text-sm text-gray-700 mt-3 leading-relaxed max-w-md">
                 It’s simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industrys standard dummy text since the
-                1500s...
+                Lorem Ipsum has been the industry’s standard dummy text ever
+                since the 1500s...
               </p>
               <button className="mt-4 bg-[#1A4ED3] text-white text-sm px-5 py-2 rounded hover:bg-blue-700 transition">
                 Read More →
@@ -81,7 +81,7 @@ export default function ChairmanSection() {
           alt="Bkash Banner"
           width={1200}
           height={300}
-          className="w-full max-w-[1200px]  object-cover rounded-md"
+          className="w-full max-w-[1200px] object-cover rounded-md"
         />
       </div>
     </section>
