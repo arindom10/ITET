@@ -1,41 +1,69 @@
-'use client';
-import QustionData from '@/Components/About/QustionData';
-import Image from 'next/image';
-import React, { useState } from 'react'
+"use client";
+import OurObjectives from "@/Components/About/OurObjectives";
+import QustionData from "@/Components/About/QustionData";
+import Image from "next/image";
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
 const page = () => {
-    const [activeSection, setActiveSection] = useState("types")
+  const [activeSection, setActiveSection] = useState("types");
   return (
-    <div className='bg-[#FFF8F6] text-black overflow-hidden'>
-         <div className="mt-12 py-10 mb-10">
+    <div className="bg-[#FFF8F6] text-black overflow-hidden">
+      <div className="mt-12 py-10 mb-10">
         <h1 className="text-[#B07210] text-[40px] md:text-[60px] font-bold text-center mt-8 mb-16">
           Constitution
         </h1>
       </div>
 
+        <div className="flex items-center py-6 mx-24">
+          <div className="w-1 h-14 bg-[#B07210] mr-6"></div>
+          <div className="flex items-center">
+            <h2 className="text-3xl font-bold text-[#444444]">
+              The Constitution of The Institution of Textile Engineers and Technologists, Bangladesh (ITET)
+            </h2>
+          </div>
+        </div>
+          <p className="text-[#444444] text-xl mx-28">This Constitution outlines the mission, structure, and governance of ITET, ensuring transparency, accountability, and excellence in advancing textile engineering and technology.</p>
+
+      {/* our objectives  */}
+
+      <OurObjectives/>
 
       {/* member details  */}
-      <h1 className="text-2xl font-medium text-center mb-8">Membership Details</h1>
+      <h1 className="text-2xl font-medium text-center mb-8">
+        Membership Details
+      </h1>
 
       <div className="flex flex-col md:flex-row gap-4 mx-auto max-w-7xl">
         {/* Left sidebar navigation */}
         <div className="w-full md:w-1/4">
           <nav className="flex flex-col space-y-4">
             <button
-              className={`px-4 py-2 text-left ${activeSection === "types" ? "bg-blue-500 text-white" : "hover:text-blue-600"}`}
+              className={`px-4 py-2 text-left ${
+                activeSection === "types"
+                  ? "bg-blue-500 text-white"
+                  : "hover:text-blue-600"
+              }`}
               onClick={() => setActiveSection("types")}
             >
               Types of Members
             </button>
             <button
-              className={`px-4 py-2 text-left ${activeSection === "eligibility" ? "bg-blue-500 text-white" : "hover:text-blue-600"}`}
+              className={`px-4 py-2 text-left ${
+                activeSection === "eligibility"
+                  ? "bg-blue-500 text-white"
+                  : "hover:text-blue-600"
+              }`}
               onClick={() => setActiveSection("eligibility")}
             >
               Eligibility for Becoming Member
             </button>
             <button
-              className={`px-4 py-2 text-left ${activeSection === "rights" ? "bg-blue-500 text-white" : "hover:text-blue-600"}`}
+              className={`px-4 py-2 text-left ${
+                activeSection === "rights"
+                  ? "bg-blue-500 text-white"
+                  : "hover:text-blue-600"
+              }`}
               onClick={() => setActiveSection("rights")}
             >
               Rights and Responsibilities
@@ -82,7 +110,10 @@ const page = () => {
                   <div className="mb-4">
                     <h2 className="font-medium">3. Honorary Member</h2>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
-                      <li>Awarded for exceptional contribution to the textile sector.</li>
+                      <li>
+                        Awarded for exceptional contribution to the textile
+                        sector.
+                      </li>
                       <li>No fee, no voting rights.</li>
                     </ul>
                   </div>
@@ -93,9 +124,16 @@ const page = () => {
                 <div className="mb-4">
                   <h2 className="font-medium">Eligibility Requirements</h2>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
-                    <li>Must have a degree or diploma in textile related field.</li>
-                    <li>Minimum 2 years of industry experience for Life-Time membership.</li>
-                    <li>Recommendation from existing members may be required.</li>
+                    <li>
+                      Must have a degree or diploma in textile related field.
+                    </li>
+                    <li>
+                      Minimum 2 years of industry experience for Life-Time
+                      membership.
+                    </li>
+                    <li>
+                      Recommendation from existing members may be required.
+                    </li>
                     <li>Application review by membership committee.</li>
                   </ul>
                 </div>
@@ -103,7 +141,9 @@ const page = () => {
 
               {activeSection === "rights" && (
                 <div className="mb-4">
-                  <h2 className="font-medium">Member Rights & Responsibilities</h2>
+                  <h2 className="font-medium">
+                    Member Rights & Responsibilities
+                  </h2>
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Attend annual general meetings and special events.</li>
                     <li>Participate in professional development programs.</li>
@@ -114,7 +154,10 @@ const page = () => {
                 </div>
               )}
 
-              <a href="#" className="inline-flex items-center text-blue-500 hover:text-blue-700 mt-2">
+              <a
+                href="#"
+                className="inline-flex items-center text-blue-500 hover:text-blue-700 mt-2"
+              >
                 Download PDF <FaArrowRight className="ml-1 h-4 w-4" />
               </a>
             </div>
@@ -126,7 +169,7 @@ const page = () => {
 
       <QustionData />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

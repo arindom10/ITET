@@ -50,7 +50,7 @@ export default function QustionData() {
   return (
     <div className="container max-w-7xl mx-auto p-6 px-4">
       <div className="flex items-center mb-6">
-        <div className="w-1 h-6 bg-orange-500 mr-3"></div>
+        <div className="w-1 h-6 bg-[#B07210] mr-3"></div>
         <h2 className="text-2xl font-medium text-gray-700">
           Have more questions? Contact us!
         </h2>
