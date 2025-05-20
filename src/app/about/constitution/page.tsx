@@ -18,7 +18,7 @@ const page = () => {
       {/* member details  */}
       <h1 className="text-2xl font-medium text-center mb-8">Membership Details</h1>
 
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-4 mx-auto max-w-7xl">
         {/* Left sidebar navigation */}
         <div className="w-full md:w-1/4">
           <nav className="flex flex-col space-y-4">
@@ -52,7 +52,7 @@ const page = () => {
                 src="https://i.postimg.cc/zG2tDBXV/Frame-1261155742.png"
                 alt="Textile professional working with equipment"
                 width={428}
-                height={320}
+                height={500}
                 className="rounded-md border border-gray-300"
               />
             </div>
