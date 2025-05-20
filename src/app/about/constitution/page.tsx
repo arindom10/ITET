@@ -15,19 +15,41 @@ const page = () => {
         </h1>
       </div>
 
-        <div className="flex items-center py-6 mx-24">
+      <div className="mx-24">
+        <div className="flex items-center py-6 ">
           <div className="w-1 h-14 bg-[#B07210] mr-6"></div>
           <div className="flex items-center">
             <h2 className="text-3xl font-bold text-[#444444]">
-              The Constitution of The Institution of Textile Engineers and Technologists, Bangladesh (ITET)
+              The Constitution of The Institution of Textile Engineers and
+              Technologists, Bangladesh (ITET)
             </h2>
           </div>
         </div>
-          <p className="text-[#444444] text-xl mx-28">This Constitution outlines the mission, structure, and governance of ITET, ensuring transparency, accountability, and excellence in advancing textile engineering and technology.</p>
+        <p className="text-[#444444] text-xl">
+          This Constitution outlines the mission, structure, and governance of
+          ITET, ensuring transparency, accountability, and excellence in
+          advancing textile engineering and technology.
+        </p>
 
+        <a
+          href="#"
+          className="inline-flex items-center text-blue-500 hover:text-blue-700 mt-4"
+        >
+          Download Full Constitution PDF{" "}
+          <FaArrowRight className="ml-1 h-4 w-4" />
+        </a>
+
+        <div className="mx-4">
+          <h1 className="py-4 text-[#444444] text-xl font-semibold">Name and Office</h1>
+          <div className="space-y-2 py-4">
+          <li><span className="font-bold">Name:</span> The Institution of Textile Engineers and Technologists, Bangladesh (ITET)</li>
+          <li><span className="font-bold">Registered Office:</span> [Office Address].</li>
+        </div>
+        </div>
+      </div>
       {/* our objectives  */}
 
-      <OurObjectives/>
+      <OurObjectives />
 
       {/* member details  */}
       <h1 className="text-2xl font-medium text-center mb-8">

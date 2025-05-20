@@ -12,7 +12,7 @@ const items = [
     bg: "bg-gray-50",
     dot: "bg-yellow-500",
     text: "text-yellow-600",
-    position: "top",
+    position: "bottom",
   },
   {
     id: "02",
@@ -23,7 +23,7 @@ const items = [
     bg: "bg-blue-50",
     dot: "bg-blue-500",
     text: "text-blue-600",
-    // position: "bottom",
+    position: "bottom",
   },
   {
     id: "03",
@@ -34,7 +34,7 @@ const items = [
     bg: "bg-pink-100",
     dot: "bg-pink-500",
     text: "text-pink-600",
-    // position: "top",
+    position: "bottom",
   },
   {
     id: "04",
@@ -45,7 +45,7 @@ const items = [
     bg: "bg-cyan-100",
     dot: "bg-cyan-500",
     text: "text-cyan-600",
-    // position: "bottom",
+    position: "bottom",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function OurObjectives() {
   return (
     <section className="py-20 bg-white relative overflow-visible">
       <h2 className="text-center text-2xl md:text-3xl font-bold text-black mb-20">
-        OUR RESPONSIBILITY
+        OUR OBJECTIVES
       </h2>
 
       <div className="flex flex-wrap justify-center items-start gap-10 max-w-7xl mx-auto relative z-10 px-4 md:px-0">
@@ -61,9 +61,9 @@ export default function OurObjectives() {
           <div
             key={item.id}
             className={`relative w-full sm:w-64 p-6 rounded-xl shadow-md ${item.bg} z-10 flex flex-col justify-between`}
-            style={{
-              marginTop: item.position === "top" ? "0" : "125px",
-            }}
+            // style={{
+            //   marginTop: item.position === "bottom" ? "0" : "125px",
+            // }}
           >
             {/* Number Position */}
             {item.position === "top" && (

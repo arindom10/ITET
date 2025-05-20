@@ -43,15 +43,15 @@ const page = () => {
             the textile engineering community.
           </p>
         </div>
-        <div className="flex items-center mx-4 ">
+        <div className="flex items-center ">
           <div className="w-1 h-6 bg-[#B07210] mr-6"></div>
           <div className="flex items-center">
-            <h2 className="text-3xl font-bold text-[#444444]">
+            <h2 className="text-3xl font-bold text-[#444444] mx-2">
               Responsibilities
             </h2>
           </div>
         </div>
-        <div>
+        <div className="space-y-2 py-4">
           <li>Strategic Oversight & Vision.</li>
           <li>Policy and Governance Review.</li>
           <li>Financial and Ethical Accountability.</li>
@@ -152,7 +152,7 @@ const page = () => {
             <div className="w-1 h-6 bg-[#B07210] mr-6"></div>
             <div className="flex items-center">
               <h2 className="text-3xl font-bold text-[#444444]">
-                Responsibilities
+                Term & Operations
               </h2>
             </div>
           </div>
