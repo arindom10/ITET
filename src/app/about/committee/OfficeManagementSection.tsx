@@ -1,3 +1,5 @@
+import QustionData from "@/Components/About/QustionData";
+
 const teamMembers = [
   {
     name: "Engr. Md. Aminul Islam",
@@ -50,57 +52,16 @@ const OfficeManagementSection = () => {
           </div>
         ))}
       </div>
-
-      <div className="border-t border-gray-300 pt-6 mb-6">
-        <p className="text-lg font-semibold text-gray-800">
+      <div className="flex items-center mb-6">
+        <div className="w-2 h-10 bg-[#B07210] mr-3"></div>
+        <p className="text-xl font-semibold text-gray-800">
           Our Leaders Are Building A Future Where Textile Engineering Meets
           Innovation, Excellence, And Global Collaboration.
         </p>
       </div>
 
       <div className="bg-gray-100 rounded-lg p-6 shadow">
-        <h3 className="text-xl font-semibold mb-6">
-          Have more questions? Contact us!
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div>
-            <p className="font-semibold text-gray-700 mb-2">ADDRESS</p>
-            <p className="text-sm text-gray-600">
-              House # 34, Road # 4,
-              <br />
-              Sector # 9<br />
-              Sonargaon Janapath, Uttara Model Town,
-              <br />
-              Dhaka-1230, Bangladesh
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold text-gray-700 mb-2">SUPPORT ENQUIRY</p>
-            <p className="text-sm text-gray-600">
-              support@itet.com
-              <br />
-              +18443165544
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold text-gray-700 mb-2">
-              Ads PARTNERS ENQUIRY
-            </p>
-            <p className="text-sm text-gray-600">
-              info@itet.com
-              <br />
-              +18443165544
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold text-gray-700 mb-2">GENARAL ENQUIRY</p>
-            <p className="text-sm text-gray-600">
-              info@itet.com
-              <br />
-              +18443165544
-            </p>
-          </div>
-        </div>
+        <QustionData />
       </div>
     </div>
   );
