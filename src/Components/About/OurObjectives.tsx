@@ -97,7 +97,7 @@ export default function OurObjectives() {
       </div>
 
       {/* Dotted Arrows */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+      <div className="absolute inset-0 w-[50px] h-full pointer-events-none z-0">
         {/* From 1 to 2 */}
         <img
           src="https://i.ibb.co/qYj1nJw1/how-work-box-arrow-1-svg-fill-1.png"

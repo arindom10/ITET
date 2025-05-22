@@ -30,7 +30,12 @@ const teamMembers = [
 const OfficeManagementSection = () => {
   return (
     <div className="px-6 py-12 max-w-7xl mx-auto">
-      <h2 className="text-2xl font-bold mb-8">Office Management Commitment</h2>
+      <div className="flex ">
+        <div className="w-1 h-6 bg-[#B07210] mr-3"></div>
+        <h2 className="text-2xl text-black font-bold mb-8">
+          Office Management Commitment
+        </h2>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
         {teamMembers.map((member, index) => (

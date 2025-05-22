@@ -153,7 +153,7 @@ export default function CommitteeMembers() {
   return (
     <div className="bg-[#f6f0e8] min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-sm text-center text-gray-600 mb-2">
+        <div className="text-xl text-center font-bold text-black mb-2">
           Home › About Us
         </div>
         <h1 className="text-4xl font-bold text-center text-[#8b5e3c] mb-4">
