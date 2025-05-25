@@ -34,7 +34,7 @@ export default function MembershipPlans() {
           community.
         </p>
 
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-2xl text-black font-bold">
           Manage All Your Social Media Profiles
           <br />
           From One Place.
