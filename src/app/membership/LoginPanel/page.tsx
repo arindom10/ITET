@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import Link from "next/link";
 
 export default function LoginPanel() {
   const [showPassword, setShowPassword] = useState(false);
@@ -71,9 +72,12 @@ export default function LoginPanel() {
         {/* Forgot Password */}
         <div className="mt-6 text-center text-sm text-[#6c757d]">
           Forgot Your Password?{" "}
-          <a href="#" className="text-[#3a8edb] font-semibold hover:underline">
+          <Link
+            href="/membership/RegisterPanel"
+            className="text-[#3a8edb] font-semibold hover:underline"
+          >
             Reset Now
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function Navbar() {
         label: "Directory & Update Information",
         path: "/membership/LoginPanel",
       },
-      { label: "Register Now", path: "/membership/register" },
+      { label: "Register Now", path: "/membership/RegisterPanel" },
     ],
     "Jobs & Internships": [
       { label: "Job Circulars", path: "/jobs/circulars" },
