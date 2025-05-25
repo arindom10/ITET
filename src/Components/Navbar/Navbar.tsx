@@ -39,7 +39,7 @@ export default function Navbar() {
       { label: "Membership Overview", path: "/membership/overview" },
       {
         label: "Directory & Update Information",
-        path: "/membership/directory-update",
+        path: "/membership/LoginPanel",
       },
       { label: "Register Now", path: "/membership/register" },
     ],
