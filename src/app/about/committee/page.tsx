@@ -95,7 +95,10 @@ export default function CommitteeMembers() {
     image: string;
   }
 
-  const renderMemberCard = (member: Member, index: number): JSX.Element => (
+  const renderMemberCard = (
+    member: Member,
+    index: number
+  ): React.ReactElement => (
     <div
       key={index}
       className="bg-white rounded-xl shadow-md p-4 border-4 border-pink-200"
