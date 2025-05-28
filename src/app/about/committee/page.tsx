@@ -1,4 +1,3 @@
-import Image from "next/image";
 import StandingCommittees from "./StandingCommittees";
 import CommitteeSection from "./CommitteeSection";
 import SportsCommitess from "./SportsCommitess";
@@ -88,46 +87,6 @@ export default function CommitteeMembers() {
         "https://i.ibb.co/93qHY6hR/27dedd5b3b77c3254117fb3e7719bf1298d5231a.png",
     },
   ];
-
-  const renderStandingCommittee = (images) => {
-    const leftImages = images.slice(0, 4);
-    const rightImages = images.slice(4);
-
-    const renderColumn = (images) => (
-      <div className="flex flex-col gap-6 w-full">
-        <div className="grid grid-cols-3 gap-6">
-          {images.slice(0, 3).map((img, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl overflow-hidden shadow-md border border-gray-300"
-            >
-              <img
-                src={img}
-                alt={`Committee ${idx + 1}`}
-                className="w-full h-auto object-contain"
-              />
-            </div>
-          ))}
-        </div>
-        <div className="mt-4">
-          <div className="rounded-xl overflow-hidden shadow-md border border-gray-300">
-            <img
-              src={images[3]}
-              alt={`Committee 4`}
-              className="w-full h-auto object-contain"
-            />
-          </div>
-        </div>
-      </div>
-    );
-
-    return (
-      <div className="flex flex-col md:flex-row gap-8">
-        {renderColumn(leftImages)}
-        {renderColumn(rightImages)}
-      </div>
-    );
-  };
 
   const renderMemberCard = (member, index) => (
     <div

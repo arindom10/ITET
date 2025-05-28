@@ -2,10 +2,11 @@
 import OurObjectives from "@/Components/About/OurObjectives";
 import QustionData from "@/Components/About/QustionData";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const page = () => {
+const Page = () => {
   const [activeSection, setActiveSection] = useState("types");
   return (
     <div className="bg-[#FFF8F6] text-black overflow-hidden">
@@ -31,20 +32,28 @@ const page = () => {
           advancing textile engineering and technology.
         </p>
 
-        <a
-          href="#"
+        <Link
+          href="/"
           className="inline-flex items-center text-blue-500 hover:text-blue-700 mt-4"
         >
           Download Full Constitution PDF{" "}
           <FaArrowRight className="ml-1 h-4 w-4" />
-        </a>
+        </Link>
 
         <div className="mx-4">
-          <h1 className="py-4 text-[#444444] text-xl font-semibold">Name and Office</h1>
+          <h1 className="py-4 text-[#444444] text-xl font-semibold">
+            Name and Office
+          </h1>
           <div className="space-y-2 py-4">
-          <li><span className="font-bold">Name:</span> The Institution of Textile Engineers and Technologists, Bangladesh (ITET)</li>
-          <li><span className="font-bold">Registered Office:</span> [Office Address].</li>
-        </div>
+            <li>
+              <span className="font-bold">Name:</span> The Institution of
+              Textile Engineers and Technologists, Bangladesh (ITET)
+            </li>
+            <li>
+              <span className="font-bold">Registered Office:</span> [Office
+              Address].
+            </li>
+          </div>
         </div>
       </div>
       {/* our objectives  */}
@@ -169,19 +178,19 @@ const page = () => {
                   <ul className="list-disc pl-5 mt-1 space-y-1">
                     <li>Attend annual general meetings and special events.</li>
                     <li>Participate in professional development programs.</li>
-                    <li>Adhere to the organization's code of ethics.</li>
+                    <li>Adhere to the organizations code of ethics.</li>
                     <li>Represent the organization professionally.</li>
                     <li>Pay membership fees on time (if applicable).</li>
                   </ul>
                 </div>
               )}
 
-              <a
+              <Link
                 href="#"
                 className="inline-flex items-center text-blue-500 hover:text-blue-700 mt-2"
               >
                 Download PDF <FaArrowRight className="ml-1 h-4 w-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -194,4 +203,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
