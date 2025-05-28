@@ -57,7 +57,13 @@ const committees = {
   ],
 };
 
-const MemberCard = ({ name, role, image }) => (
+type MemberCardProps = {
+  name: string;
+  role: string;
+  image: string;
+};
+
+const MemberCard = ({ name, role, image }: MemberCardProps) => (
   <div className="bg-white rounded-xl shadow p-3 text-center w-[180px]">
     <Image
       src={image}
@@ -71,7 +77,12 @@ const MemberCard = ({ name, role, image }) => (
   </div>
 );
 
-const CommitteeSection = ({ title, members }) => (
+type CommitteeSectionProps = {
+  title: string;
+  members: MemberCardProps[];
+};
+
+const CommitteeSection = ({ title, members }: CommitteeSectionProps) => (
   <div className="w-full md:w-1/2 px-4">
     <h2 className="text-xl font-bold mb-4 border-l-4 border-cyan-500 pl-2">
       {title} Committee
