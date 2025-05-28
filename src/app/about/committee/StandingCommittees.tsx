@@ -55,7 +55,18 @@ const committees = {
   ],
 };
 
-const CommitteeSection = ({ title, members }) => (
+type CommitteeMember = {
+  name: string;
+  role: string;
+  image: string;
+};
+
+type CommitteeSectionProps = {
+  title: string;
+  members: CommitteeMember[];
+};
+
+const CommitteeSection = ({ title, members }: CommitteeSectionProps) => (
   <div className="w-full md:w-1/2 px-4">
     <h2 className="text-xl font-bold mb-4 border-l-4 border-cyan-500 pl-2">
       {title} Committee

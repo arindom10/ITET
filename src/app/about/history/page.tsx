@@ -94,8 +94,8 @@ const page = () => {
       <section className="bg-yellow-50 px-4 lg:px-16 py-12">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
           <h2 className="text-3xl font-light">
-            Explore Our
-            <span className="text-[#B07210] font-semibold"> Gallery</span>
+            Explore Our{" "}
+            <span className="text-[#B07210] font-semibold">Gallery</span>
           </h2>
           <div className="flex items-center gap-2 text-[#B07210] cursor-pointer">
             <p>View All</p>

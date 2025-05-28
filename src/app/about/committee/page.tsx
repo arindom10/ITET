@@ -1,3 +1,4 @@
+import React from "react";
 import StandingCommittees from "./StandingCommittees";
 import CommitteeSection from "./CommitteeSection";
 import SportsCommitess from "./SportsCommitess";
@@ -88,7 +89,13 @@ export default function CommitteeMembers() {
     },
   ];
 
-  const renderMemberCard = (member, index) => (
+  interface Member {
+    role: string;
+    name: string;
+    image: string;
+  }
+
+  const renderMemberCard = (member: Member, index: number): JSX.Element => (
     <div
       key={index}
       className="bg-white rounded-xl shadow-md p-4 border-4 border-pink-200"
